@@ -1,0 +1,63 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <AssemblyName>BO1Tracker</AssemblyName>
+    <RootNamespace>BO1Tracker</RootNamespace>
+  </PropertyGroup>
+
+  <!-- Images embarquées dans l'exécutable -->
+  <ItemGroup>
+    <Resource Include="Images\fire_sale.png" />
+    <Resource Include="Images\insta_kill.png" />
+    <Resource Include="Images\max_ammo.png" />
+    <Resource Include="Images\nuke.png" />
+    <Resource Include="Images\death_machine.png" />
+    <Resource Include="Images\carpenter.png" />
+    <Resource Include="Images\double_pts.jpg" />
+    <Resource Include="Images\mystery_box.png" />
+    <Resource Include="Images\zombie_blood.png" />
+    <!-- Images des emplacements de boîte -->
+    <Resource Include="Images\locations\AKU.png" />
+    <Resource Include="Images\locations\Boat.png" />
+    <Resource Include="Images\locations\Boiler Room.png" />
+    <Resource Include="Images\locations\Bowie.png" />
+    <Resource Include="Images\locations\Clays.png" />
+    <Resource Include="Images\locations\Comms.png" />
+    <Resource Include="Images\locations\Doctors.png" />
+    <Resource Include="Images\locations\Dome.png" />
+    <Resource Include="Images\locations\Double Tap.png" />
+    <Resource Include="Images\locations\Dressing.png" />
+    <Resource Include="Images\locations\First Room.png" />
+    <Resource Include="Images\locations\Fishing.png" />
+    <Resource Include="Images\locations\Jug.png" />
+    <Resource Include="Images\locations\Labs.png" />
+    <Resource Include="Images\locations\Lighthouse.png" />
+    <Resource Include="Images\locations\Lobby.png" />
+    <Resource Include="Images\locations\MP40.png" />
+    <Resource Include="Images\locations\MPL.png" />
+    <Resource Include="Images\locations\Middle.png" />
+    <Resource Include="Images\locations\Mule.png" />
+    <Resource Include="Images\locations\Olympia.png" />
+    <Resource Include="Images\locations\PHD.png" />
+    <Resource Include="Images\locations\PaP.png" />
+    <Resource Include="Images\locations\Pig.png" />
+    <Resource Include="Images\locations\Power.png" />
+    <Resource Include="Images\locations\Speed Cola.png" />
+    <Resource Include="Images\locations\Stage.png" />
+    <Resource Include="Images\locations\Stam.png" />
+    <Resource Include="Images\locations\Storage.png" />
+    <Resource Include="Images\locations\Theater.png" />
+    <Resource Include="Images\locations\Thompson.png" />
+    <Resource Include="Images\locations\STG-44.png" />
+    <Resource Include="Images\locations\Top Mid.png" />
+    <Resource Include="Images\locations\Trench.png" />
+    <Resource Include="Images\locations\Type.png" />
+    <Resource Include="Images\locations\Waterfall.png" />
+  </ItemGroup>
+
+</Project>

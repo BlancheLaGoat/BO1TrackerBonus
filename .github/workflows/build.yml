@@ -1,0 +1,35 @@
+name: Build BO1Tracker.exe
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:      # permet aussi de lancer la compilation manuellement depuis l'onglet Actions
+
+jobs:
+  build:
+    runs-on: windows-latest   # WPF ne peut être compilé que sur Windows
+
+    steps:
+      - name: Récupérer le code
+        uses: actions/checkout@v4
+
+      - name: Installer le SDK .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: Publier l'application (.exe autonome, sans dépendance .NET à installer)
+        run: >
+          dotnet publish BO1Tracker.csproj
+          -c Release
+          -r win-x64
+          --self-contained true
+          -p:PublishSingleFile=true
+          -p:IncludeNativeLibrariesForSelfExtract=true
+          -o publish
+
+      - name: Mettre le .exe à disposition en téléchargement
+        uses: actions/upload-artifact@v4
+        with:
+          name: BO1Tracker-windows
+          path: publish/BO1Tracker.exe
